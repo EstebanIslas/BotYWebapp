@@ -1,0 +1,28 @@
+$def with(datos)
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-4">Comandos</h1><br>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">Nombre Comando</th>
+            <th scope="col">Descripcion</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            $for row in datos:
+            <tr>
+                <td>$row.nombre</td>
+                <td>$row.descripcion</td>
+                <td><a href="/delete/$row.nombre">Delete</a></td>
+                <td><a href="/update/$row.nombre">Update</a></td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+        <a href="/insert"><center><button type="button" class="btn btn-primary btn-lg">Insertar Comando</button></center></a>
+    </div>
+    </div>

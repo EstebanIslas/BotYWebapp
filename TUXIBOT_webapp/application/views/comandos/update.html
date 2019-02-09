@@ -1,0 +1,17 @@
+$def with(datos)
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Actualizar Comando</h1><br>
+        
+        <form method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre">
+                <br>
+                <label for="descripcion">Descripcion</label>
+                <input type="text" value="$datos.descripcion" id="descripcion" name="descripcion" placeholder="Descripcion">
+                <br>
+                <center><button type="submit" class="btn btn-primary btn-lg">Actualizar</button></center>
+        </form>    
+    </div>
+</div>
+
